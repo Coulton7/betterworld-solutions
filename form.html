@@ -35,7 +35,7 @@
             </div>
         </div>
     </nav>
-    <div data-bs-parallax-bg="true" class="slide-download">
+    <div data-bs-parallax-bg="true" class="slide-download" style="background-image:url(assets/img/climate-nature.jpg)">
         <div class="container"></div>
         <div class="row" style="height: 100%">
             <div class="col-sm-12 col-md-10 col-lg-6 col-xl-5 offset-md-1 offset-lg-5 offset-xl-4"><img class="img-fluid slide-caption" src="assets/img/betterworld-solutions-logo-1.png">
@@ -103,21 +103,39 @@
                 <div class="col-md-8 offset-md-2">
                     <form id="global-warming-form" class="global-warming-form">
                         <h2 class="text-center">The health of the Earth is essential to not just business, but also species survival.</h2>
-                        <div class="form-group"><label>Business Name:</label><input class="form-control" type="text" id="orgName" name="orgName" maxlength="60" placeholder="e.g ACME.co"></div>
-                        <div class="form-group"><label>Enter Email:</label><input class="form-control" type="text" id="orgEmail" name="orgEmail" maxlength="60" placeholder="example@domain.com"></div>
-                        <div class="form-group"><label>Phone Number:</label><input class="form-control" type="text" id="orgPhone" name="orgPhone" maxlength="18" placeholder="01632 123456"></div>
-                        <div class="form-group"><label>Number of Employees:</label><input class="form-control" type="text" id="orgWorkers" name="orgWorkers" maxlength="6" placeholder="e.g 250"></div>
-                        <div class="form-group"><label>Return on Investment on Time:</label><input class="form-control" type="text" id="roi" name="roi" maxlength="8" placeholder="4 years"></div>
+                        <div class="form-group"><label>Business Name:</label><input class="form-control" type="text" id="orgName" name="orgName" maxlength="60" placeholder="e.g ACME.co">
+                            <div class="invalid-feedback">
+                                <p>Please enter your Business name</p>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Enter Email:</label><input class="form-control" type="text" id="orgEmail" name="orgEmail" maxlength="60" placeholder="example@domain.com">
+                            <div class="invalid-feedback">
+                                <p>Please enter your Business name</p>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Phone Number:</label><input class="form-control" type="text" id="orgPhone" name="orgPhone" maxlength="18" placeholder="01632 123456">
+                            <div class="invalid-feedback">
+                                <p>Please enter your business telephone number</p>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Number of Employees:</label><input class="form-control" type="text" id="orgWorkers" name="orgWorkers" maxlength="6" placeholder="e.g 250">
+                            <div class="invalid-feedback">
+                                <p>Please enter the number of employees</p>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Return on Investment on Time:</label><input class="form-control" type="text" id="roi" name="roi" maxlength="8" placeholder="4 years">
+                            <div class="invalid-feedback">
+                                <p>Please enter a return on investment timeframe</p>
+                            </div>
+                        </div>
                         <div class="form-group" id="orgType"><label>Please select business type:</label>
                             <div class="form-check"><input class="form-check-input" type="radio" id="type1" value="Group" name="orgType"><label class="form-check-label" for="formCheck-1">Group</label></div>
                             <div class="form-check"><input class="form-check-input" type="radio" id="type2" name="orgType" value="Organisation"><label class="form-check-label" for="formCheck-2">Organisation</label></div>
                             <div class="form-check"><input class="form-check-input" type="radio" id="type3" name="orgType" value="Company"><label class="form-check-label" for="formCheck-3">Company</label></div>
                             <div class="form-row margin-top">
                                 <div class="col-md-12 btn-container">
-                                    <div><button class="btn btn-primary" id="createPDF" type="button" onclick="validation()">Create the Policy</button><button class="btn btn-primary download-pdf" id="downloadPDF" type="button" onclick="pdfCreator()">Download the PDF</button>
-                                        <button
-                                            class="btn btn-light save-pdf margin-left" id="savePDF" type="button" onclick="pdfOpen()">Open the PDF</button>
-                                    </div>
+                                    <div><button class="btn btn-primary" id="createPDF" type="button">Create the Policy</button><button class="btn btn-primary download-pdf" id="downloadPDF" type="button">Download the PDF</button><button class="btn btn-light save-pdf margin-left"
+                                            id="savePDF" type="button">Open the PDF</button></div>
                                 </div>
                             </div>
                         </div>
