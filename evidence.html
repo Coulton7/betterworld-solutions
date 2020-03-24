@@ -173,6 +173,33 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="calA">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Calculation A</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p>The model consists of the following calculations subject to the nature of the application studied and the available researched equivalent CO2 conversion factors for the fluids considered</p>
+                    <p>Calculation of steam turbine steam loss savings achievable via installation of Gas Lift Mechanical Sealing technology - assuming 90kg steam Loss per hour.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="calB">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Calucaltion B</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p>The model consists of the following calculations subject to the nature of the application studied and the available researched equivalent CO2 conversion factors for the fluids considered</p>
+                    <p>Calculation of the potential energy savings made by changing the sealing arrangement / API plan from least efficient to most efficient options, by way of reducing the need to heat up cool fluid injection from a continually fed external
+                        source.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="paper-calc">
         <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
             <div class="modal-content">
@@ -342,156 +369,194 @@
                             <thead>
                                 <tr>
                                     <th><strong>Industry</strong><br></th>
+                                    <th>Calculation</th>
                                     <th><strong>No of Equivalent Cars by CO</strong><sub>2</sub><strong>&nbsp;Mass</strong><br></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Refineries<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>18,065,552&nbsp;<br></td>
                                 </tr>
                                 <tr>
                                     <td class="modal-activate" data-toggle="modal" data-target="#chem-calc">Chemical Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>26,365,599&nbsp;<br></td>
                                 </tr>
                                 <tr>
                                     <td class="modal-activate" data-toggle="modal" data-target="#paper-calc">Pulp and Paper Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>5,506,582<br></td>
                                 </tr>
                                 <tr>
                                     <td>Mechanical Packing*<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>135,338,807&nbsp;<br></td>
                                 </tr>
                                 <tr>
                                     <td>Refineries - Steam Turbines<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calA">A</td>
                                     <td>6,727,709<br></td>
                                 </tr>
                                 <tr>
                                     <td>Phosphate Production&nbsp;<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>593,763<br></td>
                                 </tr>
                                 <tr>
                                     <td>Sugar Refining<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>32,341,128<br></td>
                                 </tr>
                                 <tr>
                                     <td>Biodiesel<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>535,276<br></td>
                                 </tr>
                                 <tr>
                                     <td>Ethanol Distillation<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>3,749,550<br></td>
                                 </tr>
                                 <tr>
                                     <td>Corn Milling Industries<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>2,273,986<br></td>
                                 </tr>
                                 <tr>
                                     <td>Beer Production<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>6,316,627<br></td>
                                 </tr>
                                 <tr>
                                     <td>Distilleries<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>2,627,717<br></td>
                                 </tr>
                                 <tr>
                                     <td>Geothermal Power Plants - Turbines<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calA">A</td>
                                     <td>519,868<br></td>
                                 </tr>
                                 <tr>
                                     <td>Biomass Power Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>20,213,205<br></td>
                                 </tr>
                                 <tr>
                                     <td>Coal Fired Power Plants Slurries / Non Slurry&nbsp;<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>23,012,734<br></td>
                                 </tr>
                                 <tr>
                                     <td>Coal Fired Power Plants - Turbines<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calA">A</td>
                                     <td>9,522,295&nbsp;<br></td>
                                 </tr>
                                 <tr>
                                     <td>PEEK Production Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,250,692<br></td>
                                 </tr>
                                 <tr>
                                     <td>Nylon Production Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>2,738,362<br></td>
                                 </tr>
                                 <tr>
                                     <td>PVC Production Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>2,918,281<br></td>
                                 </tr>
                                 <tr>
                                     <td>Edible Oils Production Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>4,863,802<br></td>
                                 </tr>
                                 <tr>
                                     <td>Soft Drink Bottling Plants<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>13,008,504<br></td>
                                 </tr>
                                 <tr>
                                     <td>Potash Mine<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,120,064<br></td>
                                 </tr>
                                 <tr>
                                     <td>Diamond Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>68,220<br></td>
                                 </tr>
                                 <tr>
                                     <td>Gold Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>703,420<br></td>
                                 </tr>
                                 <tr>
                                     <td>Iron Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,109,705<br></td>
                                 </tr>
                                 <tr>
                                     <td>Uranium Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>334,276<br></td>
                                 </tr>
                                 <tr>
                                     <td>Silver Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>198,342<br></td>
                                 </tr>
                                 <tr>
                                     <td>Copper Mine (Dewatering<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,963,208<br></td>
                                 </tr>
                                 <tr>
                                     <td>Coal Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>6,569,923<br></td>
                                 </tr>
                                 <tr>
                                     <td>Tin Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>883,064<br></td>
                                 </tr>
                                 <tr>
                                     <td>Lead Mine (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>6,908,810<br></td>
                                 </tr>
                                 <tr>
                                     <td>"Other" Mines (Dewatering)<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>7,155,664<br></td>
                                 </tr>
                                 <tr>
                                     <td>Offshore Platforms "O&amp;G Separation"<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>3,297,279<br></td>
                                 </tr>
                                 <tr>
                                     <td>Offshore Platforms Gas Processing&nbsp;<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,013,819<br></td>
                                 </tr>
                                 <tr>
                                     <td>Offshore Water Treatment<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>1,013,819<br></td>
                                 </tr>
                                 <tr>
                                     <td>Paint Production<br></td>
+                                    <td class="modal-activate" data-toggle="modal" data-target="#calB">B</td>
                                     <td>2,510,859<br></td>
                                 </tr>
                                 <tr>
                                     <td style="font-weight: bold;"><strong>Total</strong><br></td>
+                                    <td></td>
                                     <td style="font-weight: bold;"><strong>353,340,508</strong><br></td>
                                 </tr>
                             </tbody>
@@ -520,8 +585,8 @@
                             The authors accept these may not be specifically representative for the industries studied when looked at on an individual basis. However when looking at the global totals it is expected this balances out across all industries
                             when these are considered as a whole.<br /><br /> It is expected more savings can be made elsewhere however this study therefore does not consider the remaining 70% of applications which may be lower than 200°C. At the lower
                             temperatures contributions to savings are expected to be significantly less and therefore were not considered. Our conservative estimate is that this may be accounted for by adding 20 to 30% on top of the final total energy
-                            savings determined by this study.<br /><br /> For Calculation B the power consumption for plan 32 is taken as 162kW. This is taken as an average between the two least efficient plan 32 applications (Case 2A and 2B given in
-                            the FSA and ESA 2011).<br /><br /> For Calculation B the power consumption for plan 21 is taken as 40kW (FSA and ESA 2011).<br /><br /></p>
+                            savings determined by this study.<br /><br /> For <span data-toggle="modal" data-target="#calB" class="modal-activate">Calculation B</span> the power consumption for plan 32 is taken as 162kW. This is taken as an average between the two least efficient plan 32 applications (Case 2A and 2B given in
+                            the FSA and ESA 2011).<br /><br /> For <span data-toggle="modal" data-target="#calB" class="modal-activate">Calculation B</span> the power consumption for plan 21 is taken as 40kW (FSA and ESA 2011).<br /><br /></p>
                     </div>
                 </div>
             </div>
