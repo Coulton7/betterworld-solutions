@@ -29,7 +29,7 @@ fullScreenVideo = {
     var aspectRatio = width/height;
 
     if (aspectRatio < 0.5625){
-      var newHeight = 0.5625 * width;
+      var newHeight = 1.375 * width;
       $('#video-container').css({
         'width': width + 'px'
       });
