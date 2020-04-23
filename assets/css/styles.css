@@ -121,10 +121,6 @@
   background-repeat: no-repeat;
 }
 
-.margin-top {
-  margin-top: 1em;
-}
-
 .white-background {
   background-color: #ffffff;
   color: #535354;
@@ -213,16 +209,24 @@
   margin-top: 1em;
 }
 
+.margin-right {
+  margin-right: 1em;
+}
+
+.margin-left {
+  margin-left: 1em;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
 #downloadPDF, #savePDF {
   display: none;
 }
 
 #createPDF {
   display: block;
-}
-
-.margin-left {
-  margin-left: 1em;
 }
 
 .global-warming-form {
@@ -570,8 +574,5 @@ a.no-dash:hover {
   .page-header .banner-caption {
     display: block;
   }
-}
-
-.table-responsive {
 }
 
