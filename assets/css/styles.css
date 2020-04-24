@@ -596,7 +596,7 @@ a.no-dash:hover {
 }
 
 .form-control::placeholder {
-  color: #A5A8AC;
+  color: #619931;
 }
 
 .form-check-label {
@@ -617,6 +617,8 @@ a.no-dash:hover {
 }
 
 .form-control.is-invalid {
-  border: 3px solid #ffffff;
+  border: 3px solid #80bdff;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
 }
 
