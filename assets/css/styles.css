@@ -596,7 +596,7 @@ a.no-dash:hover {
 }
 
 .form-control::placeholder {
-  color: #7F8489;
+  color: #A5A8AC;
 }
 
 .form-check-label {
@@ -606,5 +606,17 @@ a.no-dash:hover {
 .form-check-input.is-invalid ~ .form-check-label {
   color: #ffffff;
   font-weight: bold;
+}
+
+.form-control {
+  background-color: #dcefca;
+}
+
+.form-control:focus {
+  background-color: #dcefca;
+}
+
+.form-control.is-invalid {
+  border: 3px solid #ffffff;
 }
 
