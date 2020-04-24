@@ -599,3 +599,12 @@ a.no-dash:hover {
   color: #7F8489;
 }
 
+.form-check-label {
+  color: #dcefca;
+}
+
+.form-check-input.is-invalid ~ .form-check-label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
