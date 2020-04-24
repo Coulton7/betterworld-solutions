@@ -32,14 +32,6 @@ function pdfCreator() {
       style: 'subsmall'
     },
 
-    header: {
-      margin: [45, 20, 45, 0, ],
-      text: [
-        'Printed on ', new Intl.DateTimeFormat('en-GB').format()
-      ],
-      style: 'small'
-    },
-
     content: [{
         text: 'POLICY TO PREVENT GLOBAL WARMING\n\n',
         style: 'header'
@@ -191,13 +183,13 @@ function pdfOpen() {
       header: {
         fontSize: 26,
         alignment: 'center',
-        color: '#002a5b',
+        color: '#60991f',
         bold: true
       },
       subheader: {
         fontSize: 20,
         alignment: 'center',
-        color: '#002a5b',
+        color: '#60991f',
         bold: true
       },
       defaultStyle: {
