@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   background-color: #EDEDED;
+  margin-bottom: -1px;
 }
 
 .article-list p {
