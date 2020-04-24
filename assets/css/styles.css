@@ -582,8 +582,16 @@ a.no-dash:hover {
   }
 }
 
-@supports (-ms-ime-align:auto) {
-  #savePDF {
-    display: none!important;
-  }
+#savePDF {
+  display: none!important;
 }
+
+.policy-label {
+  color: #dcefca;
+}
+
+.invalid-feedback {
+  color: #ffffff;
+  font-weight: bold;
+}
+
