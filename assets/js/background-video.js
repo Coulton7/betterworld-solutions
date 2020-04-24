@@ -63,10 +63,10 @@ fullScreenVideo = {
         'height': height + 'px'
       });
       $('#video-container').css({
-        'left': -((newWidth - width) / 2) + 'px'
+        'left': -((newWidth - width)/2) + 'px'
       });
       $('#main-image').css({
-        'left': -((newWidth - width) / 2) + 'px'
+        'left': -((newWidth - width)/2) + 'px'
       });
     }
   }
