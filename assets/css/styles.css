@@ -617,8 +617,21 @@ a.no-dash:hover {
 }
 
 .form-control.is-invalid {
-  border: 3px solid #80bdff;
+  border: 3px solid #dcefca;
   background-color: #ffffff;
+}
+
+.form-control.is-invalid:focus {
+  background-color: #fff;
+  border-color: #80bdff;
   box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+#error {
+  display: none;
+}
+
+#downloadPDF {
+  margin-left: 10em;
 }
 
