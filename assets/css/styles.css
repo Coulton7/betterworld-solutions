@@ -576,3 +576,14 @@ a.no-dash:hover {
   }
 }
 
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #savePDF {
+    display: none!important;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  #savePDF {
+    display: none!important;
+  }
+}
