@@ -595,3 +595,7 @@ a.no-dash:hover {
   font-weight: bold;
 }
 
+.form-control::placeholder {
+  color: #7F8489;
+}
+
