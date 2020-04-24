@@ -75,13 +75,13 @@ function pdfCreator() {
       header: {
         fontSize: 26,
         alignment: 'center',
-        color: '#002a5b',
+        color: '#60991f',
         bold: true
       },
       subheader: {
         fontSize: 20,
         alignment: 'center',
-        color: '#002a5b',
+        color: '#60991f',
         bold: true
       },
       defaultStyle: {
