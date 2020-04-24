@@ -124,42 +124,44 @@
                 <div class="col-md-8 offset-md-2">
                     <form id="global-warming-form" class="global-warming-form">
                         <h2 class="text-center">The health of the Earth is essential to not just business, but also species survival.</h2>
-                        <div class="form-group"><label>Business Name:</label><input class="form-control" type="text" id="orgName" name="orgName" maxlength="60" placeholder="e.g ACME.co">
+                        <div class="form-group"><label class="policy-label">Business Name:</label><input class="form-control" type="text" id="orgName" name="orgName" maxlength="60" placeholder="e.g ACME.co">
                             <div class="invalid-feedback">
                                 <p>Please enter your Business name</p>
                             </div>
                         </div>
-                        <div class="form-group"><label>Enter Email:</label><input class="form-control" type="text" id="orgEmail" name="orgEmail" maxlength="60" placeholder="example@domain.com">
+                        <div class="form-group"><label class="policy-label">Enter Email:</label><input class="form-control" type="text" id="orgEmail" name="orgEmail" maxlength="60" placeholder="example@domain.com">
                             <div class="invalid-feedback">
                                 <p>Please enter your Business name</p>
                             </div>
                         </div>
-                        <div class="form-group"><label>Phone Number:</label><input class="form-control" type="text" id="orgPhone" name="orgPhone" maxlength="18" placeholder="01632 123456">
+                        <div class="form-group"><label class="policy-label">Phone Number:</label><input class="form-control" type="text" id="orgPhone" name="orgPhone" maxlength="18" placeholder="01632 123456">
                             <div class="invalid-feedback">
                                 <p>Please enter your business telephone number</p>
                             </div>
                         </div>
-                        <div class="form-group"><label>Number of Employees:</label><input class="form-control" type="text" id="orgWorkers" name="orgWorkers" maxlength="6" placeholder="e.g 250">
+                        <div class="form-group"><label class="policy-label">Number of Employees:</label><input class="form-control" type="text" id="orgWorkers" name="orgWorkers" maxlength="6" placeholder="e.g 250">
                             <div class="invalid-feedback">
                                 <p>Please enter the number of employees</p>
                             </div>
                         </div>
-                        <div class="form-group"><label>Return on Investment on Time:</label><input class="form-control" type="text" id="roi" name="roi" maxlength="8" placeholder="4 years">
+                        <div class="form-group"><label class="policy-label">Return on Investment on Time:</label><input class="form-control" type="text" id="roi" name="roi" maxlength="8" placeholder="4 years">
                             <div class="invalid-feedback">
                                 <p>Please enter a return on investment timeframe</p>
                             </div>
                         </div>
-                        <div class="form-group" id="orgType"><label>Please select business type:</label>
-                            <div class="form-check"><input class="form-check-input" type="radio" id="type1" value="Group" name="orgType"><label class="form-check-label" for="formCheck-1">Group</label></div>
-                            <div class="form-check"><input class="form-check-input" type="radio" id="type2" name="orgType" value="Organisation"><label class="form-check-label" for="formCheck-2">Organisation</label></div>
-                            <div class="form-check"><input class="form-check-input" type="radio" id="type3" name="orgType" value="Company"><label class="form-check-label" for="formCheck-3">Company</label></div>
-                            <div class="form-row margin-top">
-                                <div class="col-md-12 btn-container">
-                                    <div><button class="btn btn-light" data-aos="slide-left" id="createPDF" type="button">Create the Policy</button><button class="btn btn-primary download-pdf" id="downloadPDF" type="button">Download the PDF</button>
-                                        <button
-                                            class="btn btn-light save-pdf margin-left" id="savePDF" type="button">Open the PDF</button>
-                                    </div>
-                                </div>
+                        <div class="form-group" id="orgType"><label class="policy-label">Please select business type:</label>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="type1" value="Group" name="orgType"><label class="form-check-label" for="type1">Group</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="type2" name="orgType" value="Organisation"><label class="form-check-label" for="type2">Organisation</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="type3" name="orgType" value="Company"><label class="form-check-label" for="type3">Company</label></div>
+                            <div>
+                                <p class="invalid-feedback">Please select a business type</p>
+                            </div>
+                        </div>
+                        <div class="form-row margin-top">
+                            <div class="col-md-12 btn-container">
+                                <div>
+                                    <p id="instruct">Once you have filled in form values, click create policy then click download policy</p><button class="btn btn-light" data-aos="slide-left" id="createPDF" type="button">Create the Policy</button><button class="btn btn-light download-pdf"
+                                        id="downloadPDF" type="button">Download the PDF</button><button class="btn btn-light save-pdf margin-left" id="savePDF" type="button">Open the PDF</button></div>
                             </div>
                         </div>
                     </form>
