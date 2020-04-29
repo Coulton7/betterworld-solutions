@@ -635,3 +635,15 @@ a.no-dash:hover {
   margin-left: 10em;
 }
 
+@media (min-width: 992px) {
+  .home-header {
+    color: #565756;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-header {
+    color: #ffffff;
+  }
+}
+
