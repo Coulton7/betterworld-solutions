@@ -1,6 +1,7 @@
 .testimonials-clean {
   color: #313437;
   background-color: #e2d8bf;
+  padding: 5em;
 }
 
 .testimonials-clean h2 {
@@ -70,7 +71,7 @@
 }
 
 .testimonials-clean .item .title {
-  color: #6FA334;
+  color: #a38b34;
 }
 
 .testimonials-clean .item .description {

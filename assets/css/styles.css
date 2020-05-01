@@ -664,3 +664,24 @@ a.white-text:hover {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .video-background .page-header {
+    top: 27%;
+    left: 17%;
+  }
+}
+
+@media (min-width: 992px) {
+  .video-background .page-header {
+    top: 27%;
+    left: 16%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-background .page-header {
+    left: 16%;
+    top: 45%;
+  }
+}
+
