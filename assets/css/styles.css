@@ -599,6 +599,10 @@ a.no-dash:hover {
   color: #619931;
 }
 
+#formio .form-check-label {
+  color: #6FA334;
+}
+
 .form-check-label {
   color: #dcefca;
 }
@@ -683,5 +687,9 @@ a.white-text:hover {
     left: 16%;
     top: 45%;
   }
+}
+
+.display-none {
+  display: none;
 }
 
