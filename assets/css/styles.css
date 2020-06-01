@@ -229,14 +229,19 @@
   display: block;
 }
 
-.global-warming-form {
+.global-warming-form, .hbspt-form {
   background-color: #60991f;
   color: #ffffff;
-  background-image: url("../../assets/img/climate-world.png");
+  /*background-image: url("../../assets/img/climate-world.png");*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
   padding: 1.5em;
+  width: 100%!important;
+}
+
+.hs-form * {
+  color: #ffffff!important;
 }
 
 .btn-primary {
@@ -691,5 +696,9 @@ a.white-text:hover {
 
 .display-none {
   display: none;
+}
+
+.hs-form-field label:not(.hs-error-msg) {
+  color: #ffffff;
 }
 
