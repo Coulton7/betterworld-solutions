@@ -240,11 +240,16 @@
   width: 100%!important;
 }
 
-form .hs-form * {
-  color: #ffffff!important;
+.hbspt-form {
+  padding-top: 1em;
+  width: 100%!important;
 }
 
-.hs-form fieldset {
+.hs-form-iframe .hbspt-form .hs-form fieldset .legal-consent-container .hs-richtext p {
+  color: #blue!important;
+}
+
+.form-columns-1 {
   max-width: 100%!important;
 }
 
@@ -608,7 +613,7 @@ a.no-dash:hover {
   color: #619931;
 }
 
-#formio .form-check-label {
+#formio .form-check-label, .hbspt-form fieldset label {
   color: #6FA334;
 }
 
@@ -621,7 +626,7 @@ a.no-dash:hover {
   font-weight: bold;
 }
 
-.form-control {
+.form-control, .hs-form .hs-input {
   background-color: #dcefca;
 }
 
@@ -702,7 +707,31 @@ a.white-text:hover {
   display: none;
 }
 
-.hs-form-field label:not(.hs-error-msg) {
-  color: #ffffff;
+fieldset.form-columns-2 {
+  max-width: 100%;
+}
+
+.hbspt-form fieldset ul li {
+  list-style: none;
+}
+
+.hs-form .hs-form-booleancheckbox-display .hs-input {
+  margin-top: 8px;
+}
+
+.hs-button {
+  background-color: #6fa334;
+  border: 1px solid #6fa334;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s;
+  margin-top: 1em;
+}
+
+.hs-button:hover {
+  background-color: #588229;
+  border: 1px solid #588229;
 }
 
