@@ -245,8 +245,8 @@
   width: 100%!important;
 }
 
-.hs-form-iframe .hbspt-form .hs-form fieldset .legal-consent-container .hs-richtext p {
-  color: #blue!important;
+.hbspt-form fieldset label.hs-error-msg {
+  color: #dd1e25;
 }
 
 .form-columns-1 {
@@ -628,6 +628,8 @@ a.no-dash:hover {
 
 .form-control, .hs-form .hs-input {
   background-color: #dcefca;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
 }
 
 .form-control:focus {
@@ -663,9 +665,6 @@ a.no-dash:hover {
   .home-header {
     color: #ffffff;
   }
-}
-
-.col-8.offset-2 {
 }
 
 #calcapendix {
@@ -728,10 +727,22 @@ fieldset.form-columns-2 {
   border-radius: .25rem;
   transition: color .15s;
   margin-top: 1em;
+  color: #ffffff;
 }
 
 .hs-button:hover {
   background-color: #588229;
   border: 1px solid #588229;
+  color: #e5e5e7;
+}
+
+ul.no-list.hs-error-msgs.inputs-list {
+  padding: 0;
+}
+
+.hs-form .hs-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
