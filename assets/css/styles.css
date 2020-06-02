@@ -746,3 +746,20 @@ ul.no-list.hs-error-msgs.inputs-list {
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
+@media (max-width: 767px) {
+  fieldset.form-columns-2 .hs-form-field, fieldset.form-columns-1 .hs-input {
+    width: 100%!important;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  fieldset.form-columns-2 .input input, fieldset.form-columns-1 .hs-input input {
+    width: 100%;
+  }
+}
+
+.form-columns-1 input[type="checkbox"] {
+  width: auto!important;
+}
+
