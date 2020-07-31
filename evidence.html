@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
     <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
     <link rel="stylesheet" href="assets/css/ri-grid.css">
@@ -62,16 +63,56 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm" id="main-nav" style="background-color: #ffffff;">
+    <div id="headerfromform" class="grey-background">
+        <div class="container">
+            <div class="row margin-top">
+                <div class="col-md-4 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column-reverse"><img class="img-fluid padding-bottom" src="assets/img/logo-600-f2.png"></div>
+                <div class="col"><img class="img-fluid" src="assets/img/top-globe.png"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md shadow-sm" id="main-nav">
         <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" id="mobile-overlay"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="margin-right: 10px;"><i class="fas fa-home"></i>&nbsp;Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" style="margin-right: 10px;" href="statement.html"><i class="fas fa-download"></i>&nbsp;Download the Statement</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="form.html" style="margin-right: 10px;"><i class="fas fa-edit"></i>&nbsp;Download the Policy</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="form.html" style="margin-right: 10px;"><i class="fas fa-edit"></i>&nbsp;Create Your Policy</a></li>
                 </ul><a class="d-sm-none d-md-block ml-auto" id="overlay-btn" href="#"><i class="fas fa-bars"></i>&nbsp; Menu</a></div>
         </div>
     </nav>
+    <div class="margin-bottom-2em white-text">
+        <div class="container-fluid fullscreen">
+            <div class="row fullscreen">
+                <div class="col-12 no-padding fullscreen">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li><img class="img-fluid" src="assets/img/sandy-back1.jpg"></li>
+                            <li><img class="img-fluid" src="assets/img/sandy-back2.jpg"></li>
+                            <li><img class="img-fluid" src="assets/img/sandy-back3.jpg"></li>
+                            <li><img class="img-fluid" src="assets/img/sandy-back4.jpg"></li>
+                            <li><img class="img-fluid" src="assets/img/sandy-back5.jpg"></li>
+                            <li><img class="img-fluid" src="assets/img/sandy-back6.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caption-container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 offset-md-1 position-rel">
+                <div class="header-title-bottom-1q-line">
+                    <h2 class="text-center title-bottom white-text"><strong>A Summary of&nbsp;</strong><span class="green-text">Evidence</span></h2>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <div class="quotebox-1q-line quotemark">
+                    <p>We could save the equivalent of 40% of all car based CO<sub>2</sub><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="myNav" class="overlay">
         <div class="overlay-content">
             <ul class="list-unstyled overlay-list">
@@ -83,68 +124,39 @@
             </ul>
         </div>
     </div>
-    <div>
-        <div class="container-fluid fullscreen">
-            <div class="row video-padding">
-                <div class="col-md-12 fullscreen"><script src="https://fast.wistia.com/assets/external/E-v1.js"></script>
-<script src="https://fast.wistia.com/labs/crop-fill/plugin.js"></script>
-<div class="col-sm-12 fullscreen video-background row-deep">
-    <div id="text">
-        <div id="actions">
-            <div id="playbutton">
-                <div class="rectangle"></div>
-                <div class="triangle"></div>
-            </div>
-        </div>
-    </div>
-    <div id="cover_all"></div>
-    <div id="main-image"></div>
-    <div id="wistia_9q0p0r2k6y" class="wistia_embed backgroundVideo"></div>
-    <div class="row">
-        <div class="col-5 col-sm-5 col-md-5 col-lg-4 col-xl-4 logo-header">
-            <img class="img-fluid" src="assets/img/betterworld-solutions-logo-1.png" />
-        </div>
-        <div class="col-12 col-sm-8 offset-sm-2 offset-md-0 col-md-8 col-lg-8 col-xl-8 page-header">
-            <h1 class="banner-title">A Summary of Evidence</h1>
-            <h2 class="banner-caption">We could save the equivalent of 40% of all car based CO<sub>2</sub></h2>
-        </div>
-    </div>
-</div></div>
-            </div>
-        </div>
-    </div>
-    <section class="grey-background">
+    <section class="grey-background padding-top-2em margin-top">
         <div class="container">
-            <div class="row row-deep">
-                <div class="col">
-                    <p class="lead">Even if Members of the Boards of large corporations did not personally believe that global warming was going to occur to the extent that it is being projected, they would usually very sensibly decide to give environmental projects
-                        priority for investment, especially if they got an acceptable return on that investment.</p>
-                    <p>The primary objective is to ensure there is a direct line of communication between the Board of Directors, their co-workers and suppliers, which will maximise appropriate investment in environmental projects.<br><br>The initiative
-                        is intended to persuade the Boards of Directors of companies with more than 250 employees to adopt a policy which will contain some or all of the following:-<br></p>
-                    <ol>
-                        <li>A statement that environmental projects, with the same return on investment as non-environmental projects, will be given priority.<br></li>
-                        <li>The Board will specify the return on investment criterion and the scale of environmental project should be brought to their attention and will undertake to make a decision inside a specified period.<br></li>
-                        <li>The Board will welcome co-workers or suppliers to directly inform it about projects with an environmental benefit.<br></li>
-                        <li>Ideally a helpline will be provided for co-workers and suppliers to discreetly bring environmental projects that meet the policy criterion to the attention of the Board, but which have been blocked for whatever reason at lower
-                            levels of the organisation.<br></li>
-                    </ol>
-                    <p>A sample of such a policy can be accessed on <a href="form.html#policy">https://www.betterworld-solutions.io/form</a>&nbsp;and can be amended to meet the need of any organisation.&nbsp; It can be considered as freeware and can be printed
-                        onto any company headed paper.&nbsp;<br></p>
+            <div class="row">
+                <div class="col margin-top">
+                    <p class="lead margin-top">This initiative is intended to persuade the Boards of Directors of companies with more than 250 employees to adopt a policy which will contain some or all of the following:-<br></p>
+                    <div class="row darkgrey-background">
+                        <div class="col row-deep">
+                            <ol class="align-self-center">
+                                <li>A statement that environmental projects, with the same return on investment as non-environmental projects, will be given priority.<br></li>
+                                <li>The Board will specify the return on investment criterion and the scale of environmental project should be brought to their attention and will undertake to make a decision inside a specified period.<br></li>
+                                <li>The Board will welcome co-workers or suppliers to directly inform it about projects with an environmental benefit.<br></li>
+                                <li>Ideally a helpline will be provided for co-workers and suppliers to discreetly bring environmental projects that meet the policy criterion to the attention of the Board, but which have been blocked for whatever reason at
+                                    lower levels of the organisation.<br></li>
+                            </ol>
+                        </div>
+                        <div class="col-4 align-self-center"><img class="img-fluid" src="assets/img/idea.png"></div>
+                    </div>
+                    <p class="padding-bottom margin-top">A sample of such a policy can be accessed&nbsp;<a href="form.html#policy">here</a>&nbsp;and can be amended to meet the need of any organisation.&nbsp; It can be considered as freeware and can be printed onto any company headed paper.&nbsp;<br></p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="slide-evidence">
+    <div class="white-background">
         <div class="container">
-            <div class="row row-deeper" style="height:100%;">
+            <div class="row padding-bottom">
                 <div class="col-auto">
-                    <p class="lead white-text">By way of example only, at the time of writing, it might be possible to save the equivalent of the CO<sub>2</sub>&nbsp;emissions (CO<sub>2</sub>eq) of approximately 341 million cars and in many cases get a return on investment of less
+                    <p class="lead margin-top green-text">By way of example only, at the time of writing, it might be possible to save the equivalent of the CO<sub>2</sub>&nbsp;emissions (CO<sub>2</sub>eq) of approximately 341 million cars and in many cases get a return on investment of less
                         than 2 years.&nbsp;</p>
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="grey-background">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 row-deep">
@@ -375,77 +387,80 @@
             </div>
         </div>
     </section><section id="assumptions">
-        <div class="card light-green-background">
-            <a class="no-dash" href="https://coulton7.github.io/betterworld-solutions/assumptions.html">
-            <div role="tab" class="card-header">
-                <h3 class="text-center">Assumptions</h3>
-                <p class="text-center"><span class="lead">The following assumptions have been made....</span> Click here to find out more <i class="fas fa-chevron-circle-right"></i></p>
-            </div>
-                </a>
-                </div>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4">         
+        <img class="img-fluid" src="assets/img/balance.png" />
+     </div>
+     <div class="col-md-8 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-xl-end">   
+
+         <p class="lead">The following assumptions have been made....<br/><a class="no-dash" href="assumptions.html">Click here to find out more <i class="fas fa-chevron-circle-right"></i></a></p>
+   </div>
+  </div>
+ </div>
 </section>
-    <section id="panellinks">
-        <div class="container-fluid fullscreen">
-            <div class="row row-deep margin-top">
-                <div class="col-8 offset-2">
-                    <h2 class="text-center">References</h2>
-                    <p>Both inspiration and direct data have been drawn from various sources during the production of this initiative. We would like to acknowledge the below sources. </p>
+
+    <section id="referencelinks">
+        <div class="container-fluid">
+            <div class="row margin-top">
+                <div class="col-5 col-sm-8 col-md-6 offset-2 offset-sm-2 offset-md-3 document-shade">
+                    <h2 class="green-text margin-left margin-right">References</h2>
+                    <p class="white-text margin-left margin-right">Both inspiration and direct data have been drawn from various sources during the production of this initiative. We would like to acknowledge the below sources. </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%201.png" title="Visit Reference Website"></a></div>
+            <div class="row row-deep margin-left margin-right">
+                <div class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-1.png" title="Visit Reference Website"></a></div>
                 <div
-                    class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%202.png" title="Visit Reference Website"></a></div>
+                    class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-2.png" title="Visit Reference Website"></a></div>
             <div
-                class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%203.png" title="Visit Reference Website"></a></div>
+                class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-3.png" title="Visit Reference Website"></a></div>
         <div
-            class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%204.png" title="Visit Reference Website"></a></div>
+            class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-4.png" title="Visit Reference Website"></a></div>
             <div
-                class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="https://www.quora.com/How-many-chemical-plants-are-constructed-per-year-and-how-many-of-them-are-continuous-steady-state-plants"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%205.png" title="Visit Reference Website"></a></div>
+                class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="https://www.quora.com/How-many-chemical-plants-are-constructed-per-year-and-how-many-of-them-are-continuous-steady-state-plants"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-5.png" title="Visit Reference Website"></a></div>
                 <div
-                    class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2" style="padding: 0px;"><a href="http://www.realclimate.org/index.php/archives/2007/11/six-degrees/"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard%206.png" title="Visit Reference Website"></a></div>
+                    class="col-4 col-sm-6 col-md-4 col-lg-2 col-xl-2"><a href="http://www.realclimate.org/index.php/archives/2007/11/six-degrees/"><img class="img-fluid mono-filter" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="pulse" src="assets/img/Artboard-6.png" title="Visit Reference Website"></a></div>
                     </div>
                     </div>
     </section>
-    <div class="article-list" style="padding-top: 2em;padding-bottom: 2em;background-image: url(&quot;assets/img/sustainability-footer.png&quot;);">
+    <section class="article-list">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center"><strong>Explore</strong></h2>
+                <h3 class="text-center"><strong>Explore</strong></h3>
                 <p class="text-center">If enough businesses act, together we can slow down or help to prevent Global Warming. </p>
             </div>
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600"><a href="introduction.html"><img class="img-fluid" src="assets/img/why-we-are-taking-action-sm-683776144.jpg"></a>
+                <div class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600"><a href="https://coulton7.github.io/betterworld-solutions-clone/introduction.html"><img class="img-fluid img-75" src="assets/img/footer-panel-1.png"></a>
                     <h3 class="name"><strong>Why we are Taking Action</strong></h3>
-                    <p class="description">The purpose of this communication is to encourage the Boards of companies worldwide to create a simple to understand policy.</p><a class="action" href="introduction.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
+                    <p class="description">The purpose of this communication is to encourage the Boards of companies worldwide to create a simple to understand policy.</p><a class="action" href="https://coulton7.github.io/betterworld-solutions-clone/introduction.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
                 <div
-                    class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><a href="evidence/steam-turbines.html"><img class="img-fluid" src="assets/img/real-world-examples-sm-153331094.jpg"></a>
+                    class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><a href="https://coulton7.github.io/betterworld-solutions-clone/case-studies.html"><img class="img-fluid img-75" src="assets/img/footer-panel-2.png"></a>
                     <h3 class="name"><strong>Real World Examples</strong></h3>
-                    <p class="description">A great example of a refinery company case study. Where we have the know-how to do things differently and help both the environment and the bottom line.</p><a class="action" href="evidence/steam-turbines.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
+                    <p class="description">Just a few examples where we have the know-how to do things differently and help both the environment and the bottom line.</p><a class="action" href="https://coulton7.github.io/betterworld-solutions-clone/case-studies.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
             <div
-                class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><a href="evidence.html"><img class="img-fluid" src="assets/img/a-summary-of-evidence-sm-25596409.jpg"></a>
+                class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><a href="https://coulton7.github.io/betterworld-solutions-clone/evidence.html"><img class="img-fluid img-75" src="assets/img/footer-panel-3.png"></a>
                 <h3 class="name"><strong>A Summary of Evidence</strong></h3>
-                <p class="description">We estimate that widespread adoption of more climate-friendly policies in industry globally, could have the equivalent impact of taking 341 million cars off the roads.</p><a class="action" href="evidence.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
-    </div>
-    </div>
-    </div>
+                <p class="description">We estimate that widespread adoption of more climate-friendly policies in industry globally, could have the equivalent impact of taking 341 million cars off the roads.</p><a class="action" href="https://coulton7.github.io/betterworld-solutions-clone/evidence.html"><i class="fa fa-arrow-circle-right fa-2x"></i></a></div>
+        </div>
+        </div>
+    </section>
     <div id="clearfix" class="clearfix"></div>
     <section id="footer">
         <div id="foothomelinked">
-            <footer class="footer-dark">
+            <footer class="footer black-background">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4 item">
                             <h3>Popular Links</h3>
                             <ul>
-                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="https://betterworld.solutions/evidence.html#evidence-table" title="Co2 Summary Table">CO<sub>2</sub> Summary Table</a></li>
-                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="https://betterworld.solutions/evidence/steam-turbines.html#video-case-study" title="Steam Turbines Case Study">Steam Turbines Case Study</a></li>
-                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="https://betterworld.solutions/evidence/pulp-and-paper-plants.html" title="Pulp &amp; Paper Calculations">Pulp &amp; Paper Calculations</a></li>
-                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="https://betterworld.solutions/betterworld-solutions/assumptions.html" title="Calculation Assumptions">Calculation Assumptions</a></li>
-                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="https://betterworld.solutions/assumptions.html#contact" title="Contact Us">Contact Us</a></li>
+                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="evidence.html#evidence-table" title="Co2 Summary Table">CO<sub>2</sub> Summary Table</a></li>
+                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="evidence/steam-turbines.html#video-case-study" title="Steam Turbines Case Study">Steam Turbines Case Study</a></li>
+                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="evidence/pulp-and-paper-plants.html" title="Pulp &amp; Paper Calculations">Pulp &amp; Paper Calculations</a></li>
+                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="assumptions.html" title="Calculation Assumptions">Calculation Assumptions</a></li>
+                                <li><a data-toggle="tooltip" data-bs-tooltip="" href="assumptions.html#contact" title="Contact Us">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-8 item text">
-                            <h3>betterworld.solutions</h3>
+                        <div class="col-md-8 item text"><img class="img-40" src="assets/img/betterworld-solutions-logo-1.png">
                             <p>The AES Engineering Ltd. Policy to “Prevent Global Warming” is a business-friendly policy intended to encourage all stakeholders in any organisation to bring sustainability projects that match the stated aim of that organisation’s
                                 policy, to the attention of the right people.</p>
                         </div>
@@ -462,17 +477,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="assets/js/background-video.js"></script>
     <script src="assets/js/form-validate.js"></script>
     <script src="assets/js/formio.js"></script>
     <script src="assets/js/gridrotator-init.js"></script>
     <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
     <script src="assets/js/jquery.gridrotator.js"></script>
     <script src="assets/js/modernizr.custom.26633.js"></script>
     <script src="assets/js/nav-btn.js"></script>
     <script src="assets/js/pdfcreator.js"></script>
     <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/vfs_fonts.js"></script>
 </body>
 
