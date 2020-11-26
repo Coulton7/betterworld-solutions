@@ -5,6 +5,8 @@ function pdfCreator() {
   var orgWorkers = document.getElementById('orgWorkers');
   var roi = document.getElementById('roi');
   var orgType = document.getElementById('orgType').value;
+  var jobRole = document.getElementById('jobRole');
+  var name = document.getElementById('name');
   var orgTypeValue;
   if (document.getElementById('type1').checked) {
     orgTypeValue = document.getElementById('type1').value;
@@ -22,7 +24,7 @@ function pdfCreator() {
       subject: 'POLICY TO PREVENT GLOBAL WARMING'
     },
 
-    pageMargins: [45, 120, 45, 60],
+    pageMargins: [45, 105, 45, 60],
 
     footer: {
       margin: [45, 0, 45, 0],
@@ -68,7 +70,19 @@ function pdfCreator() {
       },
       {
         text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.']
-      }
+      },
+      {
+        text:['\n\n']
+      },
+      {
+        text:['.......................................................................................\n\n']
+      },
+      {
+        text:['',name.value,'\n\n']
+      },
+      {
+        text:['',jobRole.value,'']
+      },
     ],
 
     styles: {
@@ -98,13 +112,15 @@ function pdfCreator() {
   var pdf = pdfMake.createPdf(docDefinition).download('Policy-to-prevent-Global-Warming.pdf');
 }
 
-function pdfOpen() {
+function pdfCreator() {
   var orgName = document.getElementById('orgName');
   var orgPhone = document.getElementById('orgPhone');
   var orgEmail = document.getElementById('orgEmail');
   var orgWorkers = document.getElementById('orgWorkers');
   var roi = document.getElementById('roi');
   var orgType = document.getElementById('orgType').value;
+  var jobRole = document.getElementById('jobRole');
+  var name = document.getElementById('name');
   var orgTypeValue;
   if (document.getElementById('type1').checked) {
     orgTypeValue = document.getElementById('type1').value;
@@ -112,7 +128,7 @@ function pdfOpen() {
     orgTypeValue = document.getElementById('type2').value;
   } else if (document.getElementById('type3').checked) {
     orgTypeValue = document.getElementById('type3').value;
-  }
+  };
 
 
   var docDefinition = {
@@ -122,7 +138,7 @@ function pdfOpen() {
       subject: 'POLICY TO PREVENT GLOBAL WARMING'
     },
 
-    pageMargins: [45, 120, 45, 60],
+    pageMargins: [45, 105, 45, 60],
 
     footer: {
       margin: [45, 0, 45, 0],
@@ -175,8 +191,23 @@ function pdfOpen() {
         ],
       },
       {
-        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.']
-      }
+        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.\n\n']
+      },
+      {
+        text:['\n\n']
+      },
+      {
+        text:['\n\n']
+      },
+      {
+        text:['.......................................................................................\n\n']
+      },
+      {
+        text:['',name.value,'\n\n']
+      },
+      {
+        text:['',jobRole.value,'']
+      },
     ],
 
     styles: {
