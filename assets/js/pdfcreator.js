@@ -129,6 +129,13 @@ function pdfCreator() {
   } else if (document.getElementById('type3').checked) {
     orgTypeValue = document.getElementById('type3').value;
   };
+var date = document.getElementById('date');
+var startDate;
+if(date.value ===""){
+  startDate = new Intl.DateTimeFormat('en-GB').format()
+} else{
+  startDate = date.value;
+};
 
 
   var docDefinition = {
@@ -146,14 +153,6 @@ function pdfCreator() {
         'This policy is copyright free and any, or all of it can be adopted at will by any organisation. Create your own by visiting, https://www.aesseal.com/en/resources/industry-guides/policy-prevent-global-warming'
       ],
       style: 'subsmall'
-    },
-
-    header: {
-      margin: [45, 20, 45, 0, ],
-      text: [
-        'Printed on ', new Intl.DateTimeFormat('en-GB').format()
-      ],
-      style: 'small'
     },
 
     content: [{
@@ -203,11 +202,14 @@ function pdfCreator() {
         text:['.......................................................................................\n\n']
       },
       {
-        text:['',name.value,'\n\n']
+        text:['',name.value,'']
       },
       {
         text:['',jobRole.value,'']
       },
+      {
+        text:['', startDate], style:['date']
+      }
     ],
 
     styles: {
@@ -231,6 +233,9 @@ function pdfCreator() {
       },
       subsmall: {
         fontSize: 8
+      },
+      date:{
+        alignment:'right'
       }
     }
   };
