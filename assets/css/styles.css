@@ -1480,3 +1480,26 @@ darkgrey-background {
   }
 }
 
+a.no-dash[aria-expanded='true'] .fas.fa-chevron-circle-down {
+  transform: rotate(-180deg);
+}
+
+.card-body {
+  background-color: #e6e6e5;
+}
+
+.contact-btn {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1032;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0,0,0,0.1) 0px 1px 6px, rgba(0,0,0,0.2) 0px 2px 24px;
+}
+
