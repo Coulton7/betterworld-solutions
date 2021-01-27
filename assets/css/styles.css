@@ -1490,7 +1490,7 @@ a.no-dash[aria-expanded='true'] .fas.fa-chevron-circle-down {
 
 .contact-btn {
   position: fixed;
-  bottom: 1em;
+  bottom: 2em;
   right: 1em;
   z-index: 1032;
   border-radius: 50%;
