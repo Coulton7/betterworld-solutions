@@ -1604,3 +1604,46 @@ a.no-dash[aria-expanded='true'] .fas.fa-chevron-circle-down {
   position: relative;
 }
 
+.carousel-slider .flex-direction-nav a, .directionNav .flex-direction-nav a {
+  top: 35%;
+  opacity: 0.7;
+  display: block;
+  border: 1px solid #e5e5e7;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.carousel-slider .flex-direction-nav a:before, .directionNav .flex-direction-nav a:before {
+  font-size: 30px;
+}
+
+.carousel-slider .flex-direction-nav a.flex-prev, .directionNav .flex-direction-nav a:before {
+  left: 0;
+  opacity: 0.7;
+}
+
+.carousel-slider .flex-direction-nav a.flex-next, .directionNav .flex-direction-nav a:before {
+  right: -15px;
+  opacity: 0.7px;
+}
+
+.flex-direction-nav a.flex-next:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-weight: 700;
+  margin-top: 0.15em;
+}
+
+.flex-direction-nav a.flex-prev:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  font-weight: 700;
+  margin-top: 0.15em;
+}
+
+.positon-relative {
+  position: relative;
+}
+
