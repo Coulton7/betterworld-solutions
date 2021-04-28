@@ -26,7 +26,7 @@
     $('.carousel-slider').flexslider({
       controlNav: false,
       directionNav: true,
-      slideshowSpeed: 5000,
+      slideshowSpeed: 4000,
       animation: "slide",
       easing: "swing",
       animationLoop: true,
