@@ -112,7 +112,7 @@ function pdfCreator() {
   var pdf = pdfMake.createPdf(docDefinition).download('Policy-to-prevent-Global-Warming.pdf');
 }
 
-function pdfMake() {
+function pdfOpen() {
   var orgName = document.getElementById('orgName');
   var orgPhone = document.getElementById('orgPhone');
   var orgEmail = document.getElementById('orgEmail');
@@ -190,10 +190,7 @@ if(date.value ===""){
         ],
       },
       {
-        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.\n\n']
-      },
-      {
-        text:['\n\n']
+        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.']
       },
       {
         text:['\n\n']
@@ -202,17 +199,14 @@ if(date.value ===""){
         text:['.......................................................................................\n\n']
       },
       {
-        text:['',name.value,'']
+        text:['',name.value,'\n\n']
       },
       {
         text:['',jobRole.value,'']
       },
-      {
-        text:['', startDate], style:['date']
-      }
     ],
 
-    styles: {
+ styles: {
       header: {
         fontSize: 26,
         alignment: 'center',
@@ -233,9 +227,6 @@ if(date.value ===""){
       },
       subsmall: {
         fontSize: 8
-      },
-      date:{
-        alignment:'right'
       }
     }
   };
