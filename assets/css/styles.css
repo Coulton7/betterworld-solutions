@@ -586,7 +586,7 @@ a.no-dash:hover {
 }
 
 #savePDF {
-  display: none!important;
+  /*display: none!important;*/
 }
 
 .policy-label {
