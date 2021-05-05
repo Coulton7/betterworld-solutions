@@ -15,6 +15,13 @@ function pdfCreator() {
   } else if (document.getElementById('type3').checked) {
     orgTypeValue = document.getElementById('type3').value;
   };
+  var date = document.getElementById('date');
+  var startDate;
+  if(date.value ===""){
+    startDate = new Intl.DateTimeFormat('en-GB').format()
+  } else{
+    startDate = date.value;
+  };
 
 
   var docDefinition = {
@@ -82,7 +89,10 @@ function pdfCreator() {
       },
       {
         text:['',jobRole.value,'']
-      },
+            },
+      {
+        text:['', startDate], style:['date']
+      }
     ],
 
     styles: {
@@ -106,6 +116,9 @@ function pdfCreator() {
       },
       subsmall: {
         fontSize: 8
+      },
+      date:{
+        alignment:'right'
       }
     }
   };
@@ -148,7 +161,7 @@ if(date.value ===""){
     pageMargins: [45, 105, 45, 60],
 
     footer: {
-      margin: [45, 0, 45, 0],
+      margin: [35, 0, 45, 0],
       text: [
         'This policy is copyright free and any, or all of it can be adopted at will by any organisation. Create your own by visiting, https://www.aesseal.com/en/resources/industry-guides/policy-prevent-global-warming'
       ],
@@ -190,7 +203,7 @@ if(date.value ===""){
         ],
       },
       {
-        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.']
+        text: ['The Board of ', orgName.value, ' encourage employees and stakeholders to contact us by ', orgPhone.value, ' or by email on ', orgEmail.value, ' to assist with the discreet implementation of this policy where necessary.\n\n']
       },
       {
         text:['\n\n']
@@ -199,14 +212,17 @@ if(date.value ===""){
         text:['.......................................................................................\n\n']
       },
       {
-        text:['',name.value,'\n\n']
+        text:['',name.value,'']
       },
       {
         text:['',jobRole.value,'']
       },
+      {
+        text:['', startDate], style:['date']
+      }
     ],
 
- styles: {
+    styles: {
       header: {
         fontSize: 26,
         alignment: 'center',
@@ -227,6 +243,9 @@ if(date.value ===""){
       },
       subsmall: {
         fontSize: 8
+      },
+      date:{
+        alignment:'right'
       }
     }
   };
