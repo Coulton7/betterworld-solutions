@@ -664,8 +664,8 @@ a.no-dash:hover {
 }
 
 a.white-text:hover {
-  color: #e5e5e7;
-  border-bottom: 1px dashed #e5e5e7;
+  color: #ffffff;
+  border-bottom: 1px dashed #ffffff;
   text-decoration: none;
 }
 
@@ -1775,5 +1775,9 @@ a.no-dash[aria-expanded='true'] .fas.fa-chevron-circle-down {
   text-shadow: 1px 1px 1px #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
+}
+
+.white-border {
+  outline: 2px solid #ffffff;
 }
 
