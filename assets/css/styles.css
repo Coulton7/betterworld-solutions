@@ -1781,3 +1781,7 @@ a.no-dash[aria-expanded='true'] .fas.fa-chevron-circle-down {
   outline: 2px solid #ffffff;
 }
 
+.white-line {
+  border-top: 1px solid #ffffff;
+}
+
