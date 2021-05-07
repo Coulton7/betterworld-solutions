@@ -157,7 +157,7 @@
         <loc>https://betterworld.solutions/manufacturing/manufacture-of-paper-and-paper-products.html</loc>
     </url>
     <url>
-        <loc>manufacturing/manufacture-of-textiles.html</loc>
+        <loc>https://betterworld.solutions/manufacturing/manufacture-of-textiles.html</loc>
     </url>
     <url>
         <loc>https://betterworld.solutions/manufacturing/manufacturing-of-rubber-and-plastic-products.html</loc>
@@ -197,6 +197,9 @@
     </url>
     <url>
         <loc>https://betterworld.solutions/index.html</loc>
+    </url>
+    <url>
+        <loc>https://betterworld.solutions/latest-news.html</loc>
     </url>
     <url>
         <loc>https://betterworld.solutions/statement.html</loc>
