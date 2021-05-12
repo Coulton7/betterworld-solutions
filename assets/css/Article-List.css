@@ -124,7 +124,7 @@
   z-index: 10;
 }
 
-.slider-link {
+.flex-active-slide .slider-link {
   position: absolute;
   width: 100%;
   height: 100%;
