@@ -9,46 +9,6 @@
            (window.innerWidth < 1200) ? 4 : 4;
   }
 
-  var TxtType = function(el, toRotate, period) {
-          this.toRotate = toRotate;
-          this.el = el;
-          this.loopNum = 0;
-          this.period = parseInt(period, 10) || 7000;
-          this.txt = '';
-          this.tick();
-      };
-
-      TxtType.prototype.tick = function() {
-          var i = this.loopNum % this.toRotate.length;
-          var fullTxt = this.toRotate[i];
-
-          if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-          } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-          }
-
-          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-          var that = this;
-          var delta = 100 - Math.random() * 100;
-
-          if (this.isDeleting) { delta /= 2; }
-
-          if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = false;
-          } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum==1;
-          delta = 500;
-          }
-
-          setTimeout(function() {
-          that.tick();
-          }, delta);
-      };
-
   $(document).ready(function() {
 
     $('.flexslider').flexslider({
@@ -83,27 +43,40 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        var elements = document.querySelectorAll('.flex-active-slide .typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
+        var curSlide = slider.find("li.flex-active-slide");
+        var id = ($(curSlide).attr("id"));
+        var content = ($(curSlide, id).attr("data-type"));
+        var ele = '<span class="headline">' + content.split('').join('</span><span class="headline">') + '</span>';
+
+        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
+            $(this).delay(50 * i).css({
+                display: 'inline',
+                opacity: 0
+            }).animate({
+                opacity: 1
+            }, 50);
+        });
       },
+      before: function(slider){ $("span.headline").remove(); },
       after: function(slider){
-        var elements = document.querySelectorAll('.flex-active-slide .typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
+
+          var curSlide = slider.find("li.flex-active-slide");
+          var id = ($(curSlide).attr("id"));
+          var content = ($(curSlide, id).attr("data-type"));
+
+          var ele = '<span class="headline">' + content.split('').join('</span><span class="headline">') + '</span>';
+
+          $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
+              $(this).delay(50 * i).css({
+                  display: 'inline',
+                  opacity: 0
+              }).animate({
+                  opacity: 1
+              }, 50);
+              });
       },
       animation: "fade",
-      slideshowSpeed: 10000,
+      slideshowSpeed: 11000,
       easing: "swing",
       animationLoop: true,
 
