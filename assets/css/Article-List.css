@@ -131,3 +131,19 @@
   z-index: 2;
 }
 
+@media (max-width: 767px) {
+  .overlay-menu-btn {
+    top: -3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay-menu-btn {
+    top: 2em;
+  }
+}
+
+.homeslider .slides img {
+  filter: brightness(60%);
+}
+

@@ -132,7 +132,7 @@ a.white-text:hover {
 }
 
 .newsslider .slides > li {
-  /*display: none;*/
+  display: none;
   -webkit-backface-visibility: hidden;
 }
 
