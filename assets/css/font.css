@@ -27,7 +27,7 @@ p a[target="_blank"]:after {
   font-weight: 300;
 }
 
-h1, .h1 {
+h1, .h1, .header-carousel {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
@@ -84,7 +84,7 @@ a.white-text {
 }
 
 @media screen and (max-width: 767px) {
-  h2 {
+  h2, .header-carousel {
     font-size: 25px;
     line-height: 40px;
   }
@@ -126,7 +126,7 @@ a.white-text {
 }
 
 @media screen and (max-width: 767px) {
-  body {
+  body, .table-header {
     font-size: 15px;
     line-height: 24px;
   }
@@ -142,7 +142,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
+  h1, .header-carousel {
     font-size: 31px;
     line-height: 44px;
   }
@@ -156,7 +156,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 768px) {
-  h3, .h3 {
+  h3, .h3, .table-header {
     font-size: 23px;
     line-height: 37px;
   }
@@ -207,7 +207,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 992px) {
-  h1 {
+  h1, .header-carousel {
     font-size: 32px;
     line-height: 48px;
   }
@@ -221,7 +221,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 992px) {
-  h3, .h3 {
+  h3, .h3, .table-header {
     font-size: 24px;
     line-height: 39px;
   }
@@ -272,7 +272,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 1200px) {
-  h1 {
+  h1, .header-carousel {
     font-size: 33px;
     line-height: 50px;
   }
@@ -286,7 +286,7 @@ a.white-text {
 }
 
 @media screen and (min-width: 1200px) {
-  h3, .h3 {
+  h3, .h3, .table-header {
     font-size: 25px;
     line-height: 41px;
   }
@@ -329,5 +329,23 @@ a.white-text {
 
 .banner-title {
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .header-carousel {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-carousel {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-carousel {
+    font-size: 2.5em;
+  }
 }
 
