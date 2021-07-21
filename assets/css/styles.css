@@ -2058,3 +2058,16 @@ a.light-green-text {
   }
 }
 
+.full-width {
+  width: 100%;
+}
+
+.nav-link.active.save-world-tab {
+  background-color: rgb(165,165,165);
+  color: #ffffff;
+}
+
+.nav-link.save-world-tab {
+  background-color: rgb(132,132,132);
+}
+
